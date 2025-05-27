@@ -10,5 +10,8 @@ public class Logintesti {
 
         System.out.println("yeni login testi yapıldı 7 gün ugraştım");
 
+
+        System.out.println("merhaba 2");
+
     }
 }

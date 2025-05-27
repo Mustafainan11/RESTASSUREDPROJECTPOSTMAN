@@ -1,0 +1,31 @@
+Postman                                  RestAssured
+body = pm.response.Json()                body
+body.id                                  body("id") -> id bilgisi verir
+body.counryName                          body("countryName")
+                                         body("post code")
+                                         body("places") tüm dizi
+                                         body("places[0]") ilk eleman
+                                         body("places[0].state") California
+                                         body("places.state") bütün state ler
+
+https://jsonpathfinder.com/  bu siteden locatorlar gibi kolaylıkla test edilebilir
+{
+    "country": "United States",
+    "country abbreviation": "US",
+    "post code": "90210",
+    "places": [
+        {
+            "place name": "Beverly Hills",
+            "longitude": "-118.4065",
+            "latitude": "34.0901",
+            "state": "California",
+            "state abbreviation": "CA"
+        },
+        {
+            "place name": "Beverly Hills",
+            "longitude": "-118.4065",
+            "latitude": "34.0901",
+            "state": "California",
+            "state abbreviation": "CA"
+        }
+    ]
