@@ -15,6 +15,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
 public class _08_GoRestPostsTest {
+
     RequestSpecification reqSpec;
     Faker randomUreteci = new Faker();
     int PostID = 0;
@@ -119,6 +120,12 @@ public class _08_GoRestPostsTest {
                 .statusCode(404)
         ;
     }
+
+    // TODO: GetNationalityId ->  get("school-service/api/nationality/"+NationalityID) bir tane nationality get
+    //       AllNationalityId ->  get("school-service/api/nationality"); id leri list şeklinde alıcaksınız
+    //1- GetNationalityId yi Create den sonra ya ekleyiniz.
+    //2- CreateNationalityNegative   Create den sonra ya ekleyiniz.
+    //3- Bütün Nationality leri siliniz. (Günün sorusu)
 
 
 }
