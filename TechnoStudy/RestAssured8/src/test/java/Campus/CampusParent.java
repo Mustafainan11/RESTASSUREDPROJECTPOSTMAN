@@ -13,7 +13,7 @@ import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
 
 public class CampusParent {
-    Faker randomUreteci = new Faker();
+    Faker randomUreteci = new Faker();//RANDOM ÜRETİR HERŞEYİ
     RequestSpecification reqSpec;
 
     @BeforeClass
