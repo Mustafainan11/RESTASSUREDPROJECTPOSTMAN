@@ -1,18 +1,19 @@
 package Utility;
 
-import java.util.HashMap;
-import java.util.Map;
 import com.github.javafaker.Faker;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.BeforeClass;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
 
 public class Parent {
-    Faker randomUreteci = new Faker();//RANDOM ÜRETİR HERŞEYİ
+    Faker randomUreteci = new Faker();
     RequestSpecification reqSpec;
 
     @BeforeClass
@@ -46,4 +47,3 @@ public class Parent {
                 .build();
     }
 }
-
